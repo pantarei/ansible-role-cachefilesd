@@ -1,2 +1,6 @@
 ---
 # defaults file for hswong3i.cachefilesd
+
+cachefilesd_daemon_opts: ""
+cachefilesd_die_time: "10"
+cachefilesd_start_time: "2"
