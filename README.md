@@ -17,7 +17,47 @@ This role was designed for Ubuntu Server 14.04 LTS and Ubuntu Server 16.04 LTS.
 Role Variables
 --------------
 
-No additional role variables.
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>parameter</th>
+<th>required</th>
+<th>default</th>
+<th>choices</th>
+<th>comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>cachefilesd_daemon_opts</td>
+<td>yes</td>
+<td></td>
+<td></td>
+<td>Additional options that are passed to the Daemon.</td>
+</tr>
+<tr class="even">
+<td>cachefilesd_die_time</td>
+<td>yes</td>
+<td>10</td>
+<td></td>
+<td>Time to wait for the server to die, in seconds.</td>
+</tr>
+<tr class="odd">
+<td>cachefilesd_start_time</td>
+<td>yes</td>
+<td>2</td>
+<td></td>
+<td>Time to wait for the server to start, in seconds.</td>
+</tr>
+</tbody>
+</table>
 
 Dependencies
 ------------
