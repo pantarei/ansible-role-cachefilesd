@@ -25,7 +25,9 @@
 
 - name: enable service
   service:
-    name: "cachefilesd"
-    enabled: "yes"
+    name: "{{ item.name }}"
+    enabled: "{{ item.enabled }}"
+  with_items:
+    - { name: "cachefilesd", enabled: "yes" }
   notify: restart cachefilesd
   tags: hswong3i.cachefilesd

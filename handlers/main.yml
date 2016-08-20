@@ -3,5 +3,7 @@
 
 - name: restart cachefilesd
   service:
-    name: "cachefilesd"
-    state: "restarted"
+    name: "{{ item.name }}"
+    state: "{{ item.state }}"
+  with_items:
+    - { name: "cachefilesd", state: "restarted" }
